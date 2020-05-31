@@ -1,7 +1,9 @@
-
 import random
 import numpy as np
 import copy
+import time
+
+start_time = time.time()
 x1min = 15
 x1max = 45
 x2min = -15
@@ -499,3 +501,5 @@ else:
         else:
             print("Fp=",round(Fp,2),"<Ft",Ft,"Рівняння адекватно оригіналу")
         print("y=",b[0],"+",b[1],"*x1+",b[2],"*x2+",b[3],"*x3+",b[4],"*x1*x2+",b[5],"*x1*x3",b[6],"*x2*x3",b[7],"*x1*x2*x3",b[8],"*x1^2",b[9],"*x2^2",b[10],"*x3^2")
+
+print("Загальний час роботи програми: %s сек." % (time.time() - start_time))
